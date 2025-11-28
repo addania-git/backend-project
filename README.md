@@ -8,14 +8,14 @@ This is the backend system for Dodger Game. It tracks scores, shows high scores,
 - About Game
 
 ## Requirements
-- .NET 10 SDK (or compatible version installed)
+- .NET 10 SDK
 
 ## How to Run
 1. Navigate to the project folder:
    ```bash
    cd GameDataManager
 2. (Optional) Clean previous builds:
-    dotnet clean
+   dotnet clean
 3. Build project:
     dotnet build
 4. Run the backend:
