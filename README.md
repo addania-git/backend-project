@@ -10,7 +10,13 @@ This is the backend system for Dodger Game. It tracks scores, shows high scores,
 ## Requirements
 - .NET 10 SDK
 
+## Project Structure
+- `GameDataManager.csproj` – Project configuration file.
+- `Program.cs` – Main entry point for the backend logic.
+
 ## How to Run
+Open the Program.cs in VSCode. In your terminal:
+
 1. Navigate to the project folder:
    ```bash
    cd GameDataManager
