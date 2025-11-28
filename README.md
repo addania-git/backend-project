@@ -15,8 +15,11 @@ This is the backend system for Dodger Game. It tracks scores, shows high scores,
    ```bash
    cd GameDataManager
 2. (Optional) Clean previous builds:
+   ```bash
    dotnet clean
 3. Build project:
-    dotnet build
+   ```bash
+   dotnet build
 4. Run the backend:
-    dotnet bin\Debug\net10.0\GameDataManager.dll
+   ```bash
+   dotnet bin\Debug\net10.0\GameDataManager.dll
