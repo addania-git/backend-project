@@ -1,52 +1,62 @@
-# Dodger Game Backend
-This is the backend system for Dodger Game. It tracks scores, shows high scores, and provides a simple game menu.
+# Dodger Game Backend (Web Version)
+
+This is the **ASP.NET Core backend** for Dodger Game. It now serves a web-based frontend (`index.html`) and provides REST APIs for authentication, game data, and leaderboard management.
 
 ## Tech Stack
 - **Language:** C#
-- **Framework:** .NET 10 SDK
-- **Tools:** Visual Studio Code, Git
+- **Framework:** .NET 10 SDK (Preview)
+- **Backend:** ASP.NET Core Web API
+- **Database:** SQLite (via Entity Framework Core)
+- **Authentication:** JWT (JSON Web Tokens)
+- **Tools:** Visual Studio Code, Git, Swagger
+
+## Features
+- Serve frontend from `wwwroot/index.html`
+- JWT-based authentication
+- SQLite database for persistent scores
+- Swagger API documentation
+- CORS enabled for cross-origin requests
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+git clone https://github.com/addania-git/backend-project.git
+cd backend-project
+   ```
+
+2. Restore dependencies:
+   ```bash
+dotnet restore
+   ```
+
+3. Apply EF migrations:
+   ```bash
+dotnet ef database update
+   ```
+
+4. Run the backend:
+   ```bash
+dotnet run
+   ```
+
+5. Open the frontend:
+   Navigate to:
+   ```
+http://localhost:5000/index.html
+   ```
+
+## API Documentation
+Swagger UI is available at:
+```
+http://localhost:5000/swagger
+```
 
 ## Project Structure
 - `GameDataManager.csproj` – Project configuration file.
 - `Program.cs` – Main entry point for the backend logic.
-
-## Features
-- Start Game (simulate survival time)
-- View High Scores (Top 3)
-- Clear Leaderboard
-- About Game
-
-## How to Run
-Open the Program.cs in VSCode. In your terminal:
-
-1. Navigate to the project folder:
-   ```bash
-   cd GameDataManager
-2. (Optional) Clean previous builds:
-   ```bash
-   dotnet clean
-3. Build project:
-   ```bash
-   dotnet build
-4. Run the backend:
-   ```bash
-   dotnet bin\Debug\net10.0\GameDataManager.dll
-
-## Menu Options
-![Game Menu](assets/menu-screenshot.png)
-
-1. **Start Game (simulate)**  
-   Simulates a game session and records a survival time score.
-
-2. **View High Scores**  
-   Displays the top 3 scores from the leaderboard.
-
-3. **Clear Leaderboard**  
-   Removes all saved scores from the leaderboard.
-
-4. **About Game**  
-   Shows information about the Dodger Game backend.
-
-5. **Exit**  
-   Closes the application.
-   
+- `Controllers/` – API endpoints for authentication and scores.
+- `Data/` – EF Core DbContext and migrations.
+- `Models/` – Entity models.
+- `Services/` – JWT token generation and related services.
+- `wwwroot/` – Frontend files (index.html, CSS, JS).
