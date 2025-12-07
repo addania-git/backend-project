@@ -1,4 +1,3 @@
-
 # Dodger Game Backend (Web Version)
 
 This is the **ASP.NET Core backend** for Dodger Game. It serves a web-based frontend (`index.html`) and provides REST APIs for authentication, game data, and leaderboard management.
@@ -23,3 +22,41 @@ This is the **ASP.NET Core backend** for Dodger Game. It serves a web-based fron
    ```bash
    git clone https://github.com/addania-git/backend-project.git
    cd backend-project
+   ```
+
+2. Restore dependencies:
+   ```bash
+   dotnet restore
+   ```
+
+3. Apply EF migrations:
+   ```bash
+   dotnet ef database update
+   ```
+
+4. Run the backend:
+   ```bash
+   dotnet run
+   ```
+
+5. Open the frontend:
+   Navigate to:
+   ```
+   http://localhost:5000/index.html
+   ```
+
+## API Documentation
+Swagger UI is available at:
+```
+http://localhost:5000/swagger
+```
+
+## Project Structure
+- `GameDataManager.csproj` – Project configuration file.
+- `Program.cs` – Main entry point for the backend logic.
+- `Controllers/` – API endpoints for authentication and scores.
+- `Data/` – EF Core DbContext and migrations.
+- `Models/` – Entity models.
+- `Services/` – JWT token generation and related services.
+- `wwwroot/` – Frontend files (index.html, CSS, JS).
+
