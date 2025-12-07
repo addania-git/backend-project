@@ -1,0 +1,14 @@
+C:\dodger-game\GameDataManager\bin\Debug\net10.0\GameDataManager.exe
+C:\dodger-game\GameDataManager\bin\Debug\net10.0\GameDataManager.deps.json
+C:\dodger-game\GameDataManager\bin\Debug\net10.0\GameDataManager.runtimeconfig.json
+C:\dodger-game\GameDataManager\bin\Debug\net10.0\GameDataManager.dll
+C:\dodger-game\GameDataManager\bin\Debug\net10.0\GameDataManager.pdb
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.AssemblyInfoInputs.cache
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.AssemblyInfo.cs
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.csproj.CoreCompileInputs.cache
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.dll
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\refint\GameDataManager.dll
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.pdb
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\GameDataManager.genruntimeconfig.cache
+C:\dodger-game\GameDataManager\obj\Debug\net10.0\ref\GameDataManager.dll

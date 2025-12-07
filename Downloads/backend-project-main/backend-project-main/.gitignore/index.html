@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dodger Game</title>
+
+  <!-- Your existing styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Game-style font for the canvas welcome text -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Dodger Game</h1>
+
+  <!-- Game Canvas (the welcome screen is drawn inside this canvas by game.js) -->
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <!-- Server Leaderboard (always visible) -->
+  <section>
+    <h2>Top 3 Scores (Server)</h2>
+    <ul id="highscores"></ul>
+    <button id="clear-btn" onclick="clearLeaderboard()">Clear Server Leaderboard</button>
+  </section>
+
+  <!-- Game Over Panel (shown by JS when you collide) -->
+  <div id="game-over" class="hidden">
+    <h2>Game Over!</h2>
+    <p>Your Score: <span id="final-score"></span></p>
+    <p>Longest (Local): <span id="high-score"></span></p>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
